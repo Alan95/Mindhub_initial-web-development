@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
-
 .header {
     background-color: rgb(80, 201, 195);
-    height: 15dvh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-end; 
@@ -24,11 +23,15 @@
     background-color: rgb(73, 50, 19);
     text-decoration: none;
     padding: 10px;
-    height: 80%;
+    height: 70%;
     border-radius: 5px;
     color: beige;
     transition: 1s;
     margin-right: 10px;
+    border: 5px rgb(73, 50, 19) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .link:hover {
     background-color: rgb(74, 209, 233);
@@ -43,14 +46,14 @@
     margin: 0 80px;
 }
 .main {
-    min-height: 80dvh;
+    height: 80vh;
     background: rgb(34,80,65);
     background: linear-gradient(0deg, rgba(34,80,65,1) 0%, rgba(159,207,191,1) 30%, rgba(47,255,246,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .container-title {
@@ -59,7 +62,7 @@
 
 .banner {
     width: auto;
-    height: 25dvh;
+    height: 25vh;
     object-fit: contain;
     margin: 10px auto;
     border: 2px black solid;
@@ -103,15 +106,13 @@
     justify-content: space-between;
     border: 2px black solid;
     border-radius: 10px;
-    width: 50dvw;
+    width: 50vw;
     font-size: larger;
 }
 .list-square {
     list-style-type: square;
 }
 .underline {
-    font-size: larger;
-    font-weight: 900;
     text-decoration: underline;
 }
 .list-image {
@@ -139,7 +140,7 @@
     background-color: rgb(164, 217, 233);
 }
 .footer {
-    height: 5dvh;
+    height: 5vh;
     text-align: center;
     background-color: rgb(13, 53, 40);;
     display: flex;
