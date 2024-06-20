@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .header {
     background-color: rgb(80, 201, 195);
     height: 15vh;
@@ -19,7 +24,7 @@
     gap: 10px;
 }
 
-.link {
+.button {
     background-color: rgb(73, 50, 19);
     text-decoration: none;
     padding: 10px;
@@ -46,10 +51,10 @@
     margin: 0 80px;
 }
 .main {
-    height: 80vh;
     background: rgb(34,80,65);
     background: linear-gradient(0deg, rgba(34,80,65,1) 0%, rgba(159,207,191,1) 30%, rgba(47,255,246,1) 100%);
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -71,7 +76,7 @@
 
 .container-content {
     display: flex;
-    
+    justify-content: space-around;
 }
 .content-text {
     font-size: larger;
@@ -115,6 +120,9 @@
 .underline {
     text-decoration: underline;
 }
+.fontsize_large {
+    font-size: larger;
+}
 .list-image {
     width: 40%;
     object-fit: cover;
@@ -150,4 +158,103 @@
 
 .createdBy {
     color:beige;
+}
+.map {
+    padding: 20px 0 20px;
+}
+.form_raffle {
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 0 20px 20px;
+    font-size: 17px;
+}
+.container-raffle {
+    width: 100%;
+    justify-content: space-evenly;
+}
+.form_raffle label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form_raffle .inline-block {
+    display: inline-block;
+}
+.form_raffle textarea {
+    resize: none;
+}
+.form_raffle button {
+    border-radius: 20%;
+    width: 60px;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.form_raffle fieldset {
+    border: none;
+    padding: 5px 0 5px;
+}
+@media (max-width: 1024px) {
+    .nav {
+        gap: 0;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    .button {
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        gap: 0;
+        
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    .button {
+        width: 100px;
+        height: 40px;
+        border: 1px rgb(73, 50, 19) solid;
+        padding: 10px;
+    }
+    .container-list {
+        font-size: small;
+        width: 90vw;
+    }
+    .container-raffle {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90vw;
+    }
+    .container-raffle iframe {
+        width: 90vw;
+    }
+    .form_raffle {
+        width: 90vw;
+        font-size: small;
+    }
+    .contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container-content {
+        width: 90vw;
+    }
 }

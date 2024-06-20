@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle</title>
+    <meta name="description" content="Kiki Ice Cream">
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../assets/logo.png" alt="logo kiki">
+        <nav class="navBar">
+            <a class="button" href="../index.html">Home</a>
+            <a class="button" href="./aboutUs.html">About Us</a>
+            <a class="button" href="./contact.html">Contact</a>
+            <a class="button" href="./benefitsTips.html">Benefits and Tips</a>
+            <a class="button" href="./information.html">Information</a>
+            <a class="button" href="#">Raffle</a>
+        </nav>
+
+    </header>
+    <main class="main">
+        <h1>Raffle</h1>
+        <p class="underline fontsize_large">You can collaborate to hold an exhibition event and participate in a raffle to win an easel</p>
+        <div class="container-content container-raffle">
+            <section>
+                <h3>Our location is located at:</h3>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11119.88409795762!2d-118.25645455819127!3d34.04487375962508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1718829777835!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <form class="form_raffle" action="../show_data.html" method="get">
+                <label for="first_name">First Name
+                    <input type="text" name="first_name" id="first_name" placeholder="Your Name" required>
+                </label>
+                <label for="last_name">Last Name
+                    <input type="text" name="last_name" id="last_name" placeholder="Your Last Name" required>
+                </label>
+                <label for="platform">Choose Meet or Zoom
+                    <select name="platform" id="platform">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="meet">Meet</option>
+                        <option value="zoom">Zoom</option>
+                    </select>
+                </label>
+                <label for="date">Choose Date
+                    <input type="date" name="date" id="date">
+                </label>
+                <label>Payment Options</label>
+                <label class="inline-block" for="cash">
+                    <input type="radio" name="payment" id="cash" value="cash">
+                    Cash
+                </label>
+                <label class="inline-block" for="credit">
+                    <input type="radio" name="payment" id="credit" value="credit">
+                    Credit Card
+                </label>
+                <label class="inline-block" for="debit">
+                    <input type="radio" name="payment" id="debit" value="debit">
+                    Debit Card
+                </label>
+                <label for="massage">Massage Optional
+                    <textarea cols="5" rows="5" name="massage" id="massage" placeholder="Your Massage"></textarea>
+                </label>
+                <fieldset>
+                    <label class="inline-block" for="terms_conditions">
+                    <input type="checkbox" name="terms_conditions" id="terms_conditions" required value="accept">
+                    I accept terms and conditions...
+                </label>
+                <button class="button inline-block" type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <span class="createdBy">Created by: Alan Soto</span>
+    </footer>
+</body>
+
+</html>
